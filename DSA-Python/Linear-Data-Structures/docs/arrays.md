@@ -51,3 +51,24 @@ Arrays can be classified in two ways:
 
 1. Fixed Sized Arrays:
 
+We cannot alter or update the size of this array. Here only a fixed size of memory will be allocated for storage. In case, we don’t know the size of the array then if we declare a larger size and store a lesser number of elements will result in a wastage of memory or we declare a lesser size than the number of elements then we won’t get enough memory to store all the elements. In such cases, static memory allocation is not preferred.
+
+```
+# Create a fixed-size list of length 9, 
+# initialized with zeros
+arr = [0] * 9
+
+# Output the fixed-size list
+print(arr)
+```
+
+2. Dynamic Sized Arrays:
+
+The size of the array changes as per user requirements during execution of code so the coders do not have to worry about sizes. They can add and removed the elements as per the need. The memory is mostly dynamically allocated and de-allocated in these arrays.
+
+```
+# Dynamic Array
+arr = []
+```
+
+## Types of Arrays on the basis of Dimensions:
