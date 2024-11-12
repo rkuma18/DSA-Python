@@ -112,8 +112,51 @@ We can traverse over an array and search for an element.
 | Operation | Best Case | Average Case | Worst Case |
 | --------- | --------- | ------------ | ---------- |
 | Traversal |    Ω(N)   |     θ(N)     |     O(N)   |
-| Insertion |    Ω(1)   |    θ(N)      |     O(N)   |
+| Insertion |    Ω(1)   |     θ(N)     |     O(N)   |
 | Deletion  |    Ω(1)   |     θ(N)     |     O(N)   |
 | Searching |    Ω(1)   |     θ(N)     |     O(N)   |
 
 
+### Space Complexity:
+
+| Operation | Best Case | Average Case | Worst Case |
+| --------- | --------- | ------------ | ---------- |
+| Traversal |    Ω(1)   |     θ(1)     |     O(1)   |
+| Insertion |    Ω(1)   |     θ(N)     |     O(N)   |
+| Deletion  |    Ω(1)   |     θ(N)     |     O(N)   |
+| Searching |    Ω(1)   |     θ(1)     |     O(1)   |
+
+
+## Advantages of Array
+
+- Arrays allow random access to elements. This makes accessing elements by position faster.
+- Arrays have better cache locality which makes a pretty big difference in performance.
+- Arrays represent multiple data items of the same type using a single name.
+- Arrays are used to implement the other data structures like linked lists, stacks, queues, trees, graphs, etc.
+
+## Disadvantages of Array
+
+- As arrays have a fixed size, once the memory is allocated to them, it cannot be increased or decreased, making it impossible to store extra data if required. An array of fixed size is referred to as a static array. 
+- Allocating less memory than required to an array leads to loss of data.
+- An array is homogeneous in nature so, a single array cannot store values of different data types. 
+- Arrays store data in contiguous memory locations, which makes deletion and insertion very difficult to implement. This problem is overcome by implementing linked lists, which allow elements to be accessed sequentially.
+
+## Applications of Array
+
+- They are used in the implementation of other data structures such as array lists, heaps, hash tables, vectors, and matrices.
+- Database records are usually implemented as arrays.
+- It is used in lookup tables by computer.
+
+## Real-World Applications of Array:
+
+- Signal Processing
+- Multimedia Applications
+- Data Mining
+- Robotics
+- Real-time Monitoring and Control Systems
+- Financial Analysis
+- Scientific Computing
+
+## Python List
+
+List is a built-in data structure that is used to store an ordered collection of items. Lists are mutable, meaning that their contents can be changed after the list has been created. They can hold a various of data types, including integers, floats, strings, and even other lists.
