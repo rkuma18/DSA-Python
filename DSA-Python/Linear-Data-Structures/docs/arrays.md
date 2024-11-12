@@ -72,3 +72,17 @@ arr = []
 ```
 
 ## Types of Arrays on the basis of Dimensions:
+
+1. One-dimensional Array(1-D Array):
+
+We can imagine a 1d array as a row, where elements are stored one after another.
+
+2. Multi-dimensional Array:
+
+A multi-dimensional array is an array with more than one dimension. We can use multidimensional array to store complex data in the form of tables, etc. We can have 2-D arrays, 3-D arrays, 4-D arrays and so on.
+
+**- Two-Dimensional Array(2-D Array or Matrix):**
+2-D Multidimensional arrays can be considered as an array of arrays or as a matrix consisting of rows and columns.
+
+**- Three-Dimensional Array(3-D Array):**
+A 3-D Multidimensional array contains three dimensions, so it can be considered an array of two-dimensional arrays.
