@@ -160,3 +160,14 @@ We can traverse over an array and search for an element.
 ## Python List
 
 List is a built-in data structure that is used to store an ordered collection of items. Lists are mutable, meaning that their contents can be changed after the list has been created. They can hold a various of data types, including integers, floats, strings, and even other lists.
+
+```
+a = [1, 'apple', 3.14, [5, 6]]
+
+print(a)
+```
+
+**Output**
+```
+[1, 'apple', 3.14, [5, 6]]
+```
