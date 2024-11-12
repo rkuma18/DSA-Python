@@ -171,3 +171,68 @@ print(a)
 ```
 [1, 'apple', 3.14, [5, 6]]
 ```
+
+## Creating a List
+We can create a list in Python using square brackets [] or by using the list() constructor. Here are some common methods to create a list:
+
+### Using Square Brackets
+We can directly create a list by enclosing elements in square brackets.
+
+```
+# List of integers
+a = [1, 2, 3, 4, 5]
+
+# List of strings
+b = ['apple', 'banana', 'cherry']
+
+# Mixed data types
+c = [1, 'hello', 3.14, True]
+
+print(a)
+print(b)
+print(c)
+```
+
+**Output**
+
+```
+[1, 2, 3, 4, 5]
+['apple', 'banana', 'cherry']
+[1, 'hello', 3.14, True]
+```
+
+### Using the list() Constructor
+We can also create a list by passing an iterable (like a string, tuple, or another list) to the list() function.
+
+```
+# From a tuple
+a = list((1, 2, 3, 'apple', 4.5))  
+
+print(a)
+```
+
+**Output**
+
+```
+[1, 2, 3, 'apple', 4.5]
+```
+
+### Creating a List with Repeated Elements
+We can create a list with repeated elements using the multiplication operator.
+
+```
+# Create a list [2, 2, 2, 2, 2]
+a = [2] * 5
+
+# Create a list [0, 0, 0, 0, 0, 0, 0]
+b = [0] * 7
+
+print(a)
+print(b)
+```
+
+**Output**
+```
+[2, 2, 2, 2, 2]
+[0, 0, 0, 0, 0, 0, 0]
+```
