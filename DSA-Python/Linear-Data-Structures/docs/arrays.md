@@ -86,3 +86,23 @@ A multi-dimensional array is an array with more than one dimension. We can use m
 
 **- Three-Dimensional Array(3-D Array):**
 A 3-D Multidimensional array contains three dimensions, so it can be considered an array of two-dimensional arrays.
+
+## Operations on Array
+
+1. Array Traversal:
+
+Array traversal involves visiting all the elements of the array once.
+
+2. Insertion in Array:
+
+We can insert one or multiple elements at any position in the array.
+
+3. Deletion in Array:
+
+We can delete an element at any index in an array.
+
+4. Searching in Array:
+
+We can traverse over an array and search for an element.
+
+
