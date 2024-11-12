@@ -105,4 +105,15 @@ We can delete an element at any index in an array.
 
 We can traverse over an array and search for an element.
 
+## Complexity Analysis of Operations on Array
+
+### Time Complexity:
+
+| Operation | Best Case | Average Case | Worst Case |
+| --------- | --------- | ------------ | ---------- |
+| Traversal |    Ω(N)   |     θ(N)     |     O(N)   |
+| Insertion |    Ω(1)   |    θ(N)      |     O(N)   |
+| Deletion  |    Ω(1)   |     θ(N)     |     O(N)   |
+| Searching |    Ω(1)   |     θ(N)     |     O(N)   |
+
 
