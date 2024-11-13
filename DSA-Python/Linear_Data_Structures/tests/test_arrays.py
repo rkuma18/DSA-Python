@@ -6,8 +6,8 @@ import os
 # Add the project root directory to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-from Linear-Data-Structures.src.arrays.static_array 
-import StaticArray
+from Linear_Data_Structures.src.arrays.static_array import StaticArray
+
 
 class TestStaticArray(unittest.TestCase):
     def setUp(self):
