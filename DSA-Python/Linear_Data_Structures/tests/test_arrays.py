@@ -6,6 +6,7 @@ import os
 # Add the project root directory to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
+from Linear_Data_Structures.src.arrays.dynamic_array import DynamicArray
 from Linear_Data_Structures.src.arrays.static_array import StaticArray
 
 
@@ -26,6 +27,47 @@ class TestStaticArray(unittest.TestCase):
             
         with self.assertRaises(IndexError):
             self.array.get(5)  # Out of bounds
+
+
+class TestDynamicArray(unittest.TestCase):
+    def setUp(self):
+        self.array = DynamicArray()  # Create an empty dynamic array
+
+    def test_append(self):
+        self.array.append(10)
+        self.array.append(20)
+        self.array.append(30)
+        self.assertEqual([self.array[i] for i in range(len(self.array))], [10, 20, 30])
+
+    def test_insert(self):
+        self.array.append(10)
+        self.array.append(20)
+        self.array.append(30)
+        self.array.insert(1, 15)  # Insert 15 at index 1
+        self.assertEqual([self.array[i] for i in range(len(self.array))], [10, 15, 20, 30])
+
+    def test_remove(self):
+        self.array.append(10)
+        self.array.append(20)
+        self.array.append(30)
+        self.array.remove(20)  # Remove the first occurrence of 20
+        self.assertEqual([self.array[i] for i in range(len(self.array))], [10, 30])
+
+    def test_out_of_bounds_access(self):
+        self.array.append(10)
+        with self.assertRaises(IndexError):
+            _ = self.array[10]  # This should raise an IndexError
+
+    def test_remove_non_existent_element(self):
+        self.array.append(10)
+        with self.assertRaises(ValueError):
+            self.array.remove(100)  # This should raise a ValueError
+
+    def test_automatic_resizing(self):
+        for i in range(100):  # Add 100 elements to test resizing
+            self.array.append(i)
+        self.assertEqual(len(self.array), 100)
+
 
 if __name__ == "__main__":
     unittest.main()
