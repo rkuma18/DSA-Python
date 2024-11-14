@@ -236,3 +236,138 @@ print(b)
 [2, 2, 2, 2, 2]
 [0, 0, 0, 0, 0, 0, 0]
 ```
+
+### Accessing List Elements
+
+Elements in a list can be accessed using indexing. Python indexes start at 0, so a[0] will access the first element, while negative indexing allows us to access elements from the end of the list. Like index -1 represents the last elements of list.
+
+```
+a = [10, 20, 30, 40, 50]
+
+# Access first element
+print(a[0])    
+
+# Access last element
+print(a[-1])
+```
+
+**Output**
+```
+10
+50
+```
+
+### Adding Elements into List
+
+- **append()**: Adds an element at the end of the list.
+- **extend()**: Adds multiple elements to the end of the list.
+- **insert()**: Adds an element at a specific position.
+
+```
+# Initialize an empty list
+a = []
+
+# Adding 10 to end of list
+a.append(10)  
+print("After append(10):", a)  
+
+# Inserting 5 at index 0
+a.insert(0, 5)
+print("After insert(0, 5):", a) 
+
+# Adding multiple elements  [15, 20, 25] at the end
+a.extend([15, 20, 25])  
+print("After extend([15, 20, 25]):", a) 
+```
+
+**Output**
+```
+After append(10): [10]
+After insert(0, 5): [5, 10]
+After extend([15, 20, 25]): [5, 10, 15, 20, 25]
+```
+### Updating Elements into List
+
+```
+a = [10, 20, 30, 40, 50]
+
+# Change the second element
+a[1] = 25 
+
+print(a)
+```
+**Output**
+```
+[10, 25, 30, 40, 50]
+```
+
+### Removing Elements from List
+
+- **remove()**: Removes the first occurrence of an element.
+- **pop()**: Removes the element at a specific index or the last element if no index is specified.
+- **del statement**: Deletes an element at a specified index.
+
+```
+a = [10, 20, 30, 40, 50]
+
+# Removes the first occurrence of 30
+a.remove(30)  
+print("After remove(30):", a)
+
+# Removes the element at index 1 (20)
+popped_val = a.pop(1)  
+print("Popped element:", popped_val)
+print("After pop(1):", a) 
+
+# Deletes the first element (10)
+del a[0]  
+print("After del a[0]:", a)  
+```
+
+**Output**
+```
+After remove(30): [10, 20, 40, 50]
+Popped element: 20
+After pop(1): [10, 40, 50]
+After del a[0]: [40, 50]
+```
+
+### Iterating Over Lists
+
+We can iterate the Lists easily by using a for loop or other iteration methods. Iterating over lists is useful when we want to do some operation on each item or access specific items based on certain conditions. Let’s take an example to iterate over the list using for loop.
+
+```
+a = ['apple', 'banana', 'cherry']
+
+# Iterating over the list
+for item in a:
+    print(item)
+
+```
+
+**Output**
+```
+apple
+banana
+cherry
+```
+
+### Nested Lists and Multidimensional Lists
+
+A nested list is a list within another list, which is useful for representing matrices or tables. We can access nested elements by chaining indexes.
+
+```
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Access element at row 2, column 3
+print(matrix[1][2]) 
+```
+
+**Output**
+```
+6
+```
